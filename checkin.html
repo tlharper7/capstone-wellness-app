@@ -8,30 +8,183 @@
   <meta name="Description" content="Enter your description here" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="Attach CSS here">
-  <title>Enter title here</title>
+  <title>Well Notes</title>
 </head>
 
 <body>
 
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">WellNotes</a>
+    <img src="./assets/images/IMG-1964.PNG" width="130" height="75"/>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbar">
       <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link" href="#">Home</a>
-        <a class="nav-item nav-link" href="#">Link</a>
-        <a class="nav-item nav-link" href="#">Link</a>
+        <a class="nav-item nav-link" href="#">Check In</a>
+        <a class="nav-item nav-link" href="#">Calendar</a>
+        <a class="nav-item nav-link" href="#">Charts</a>
       </div>
     </div>
   </nav>
 
-<body>
+  <div class="container">
+  <form>
+    <h1>Please Enter Today's Well Note</h1>
+    <div class="form-group row">
+      <label for="emotion" class="col-sm-2 col-form-label">How are you feeling today?</label>
 
+          <div class="item col-sm-2">
+            <label for="0">
+              <input
+                class="radio"
+                type="radio"
+                name="feedback"
+                id="0"
+                value="angry"
+              />
+              <span>&#128545 Angry</span>
+            </label>
+          </div>
 
+          <div class="item col-sm-2">
+            <label for="1">
+              <input
+                class="radio"
+                type="radio"
+                name="feedback"
+                id="1"
+                value="sad"
+              />
+              <span>&#128542 Sad</span>
+            </label>
+          </div>
+
+          <div class="item col-sm-2">
+            <label for="2">
+              <input
+                class="radio"
+                type="radio"
+                name="feedback"
+                id="2"
+                value="fine"
+              />
+              <span>&#128528 Fine</span>
+            </label>
+          </div>
+
+          <div class="item col-sm-2">
+            <label for="3">
+              <input
+                class="radio"
+                type="radio"
+                name="feedback"
+                id="3"
+                value="happy"
+              />
+              <span>&#128578 Happy</span>
+            </label>
+          </div>
+
+          <div class="item col-sm-2">
+            <label for="4">
+              <input
+                class="radio"
+                type="radio"
+                name="feedback"
+                id="4"
+                value="excited"
+              />
+              <span>&#128512 Excited</span>
+            </label>
+          </div>
+    </div>
+          <div class="form-group row">
+            <label for="water" class="col-sm-4 col-form-label">How much water did you drink today?</label>
+            <input class="col-sm-2"
+              type="number"
+              min="5"
+              max="100"
+              name="waterintake"
+              value=""
+              id="waterintake"
+            /><p class="col-sm-4"> Ounces         
+      </p>
+            </div>
+          <div class="form-group row">
+            <label for="meals" class="col-sm-4 col-form-label">Have you eaten the following meals?</label>
+            <input type="checkbox" name="breakFast" value="" id="breakFast" />
+            <p>&nbsp;&nbsp;Breakfast&nbsp;</p>
+            <input type="checkbox" name="lUnch" value="" id="lUnch" />
+            <p>&nbsp;&nbsp;Lunch&nbsp;&nbsp;</p>
+            <input type="checkbox" name="dInner" value="" id="dInner" />
+            <p>&nbsp;&nbsp;Dinner&nbsp;&nbsp;</p>
+          </div>
+          <div class="form-group row">
+            <label for="medication" class="col-sm-3 col-form-label">Did you take your medication and/or supplements today, if any?</label>
+      
+                <div class="item col-sm-3">
+                  <label for="5">
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="meds"
+                      id="5"
+                      value="yes"
+                    />
+                    <span>Yes</span>
+                  </label>
+                </div>
+      
+                <div class="item col-sm-3">
+                  <label for="6">
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="meds"
+                      id="6"
+                      value="no"
+                    />
+                    <span>No</span>
+                  </label>
+                </div>
+      
+                <div class="item col-sm-3">
+                  <label for="7">
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="meds"
+                      id="7"
+                      value="na"
+                    />
+                    <span>N/A</span>
+                  </label>
+                </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-2">
+              <label>Would you like daily reminders?</label><br />
+              <input type="checkbox" name="reminders" value="" id="reminders" />
+            </div>
+            <div class="col-sm-2">
+              <label>What time would you like daily reminders?</label><br />
+              <input type="time" id="appt" name="appt" />
+            </div>
+          </div>
+          <div class="row">
+            <label>Journal entry</label><br />
+            <textarea id="entry"></textarea>
+          </div>
+
+          
+          <div id="submitDiv" class="row">
+            <button type="button" id="submit">Submit</button>
+          </div>
+  </form>
+</div>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
