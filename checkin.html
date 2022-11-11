@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="Enter your description here" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="Attach CSS here">
+  <!-- <link rel="stylesheet" href="Attach CSS here"> -->
   <title>Well Notes</title>
 </head>
 
@@ -42,10 +42,10 @@
                 class="radio"
                 type="radio"
                 name="feedback"
-                id="0"
-                value="angry"
+                id="excited"
+                value="0"
               />
-              <span>&#128545 Angry</span>
+              <span>&#128512 Excited</span>
             </label>
           </div>
 
@@ -55,10 +55,10 @@
                 class="radio"
                 type="radio"
                 name="feedback"
-                id="1"
-                value="sad"
+                id="happy"
+                value="1"
               />
-              <span>&#128542 Sad</span>
+              <span>&#128578 Happy</span>
             </label>
           </div>
 
@@ -68,8 +68,8 @@
                 class="radio"
                 type="radio"
                 name="feedback"
-                id="2"
-                value="fine"
+                id="fine"
+                value="2"
               />
               <span>&#128528 Fine</span>
             </label>
@@ -81,10 +81,10 @@
                 class="radio"
                 type="radio"
                 name="feedback"
-                id="3"
-                value="happy"
+                id="sad"
+                value="3"
               />
-              <span>&#128578 Happy</span>
+              <span>&#128542 Sad</span>
             </label>
           </div>
 
@@ -94,10 +94,10 @@
                 class="radio"
                 type="radio"
                 name="feedback"
-                id="4"
-                value="excited"
+                id="angry"
+                value="4"
               />
-              <span>&#128512 Excited</span>
+              <span>&#128545 Angry</span>
             </label>
           </div>
     </div>
@@ -121,6 +121,8 @@
             <p>&nbsp;&nbsp;Lunch&nbsp;&nbsp;</p>
             <input type="checkbox" name="dInner" value="" id="dInner" />
             <p>&nbsp;&nbsp;Dinner&nbsp;&nbsp;</p>
+            <input type="checkbox" name="sNacks" value="" id="sNacks" />
+            <p>&nbsp;&nbsp;Snacks&nbsp;&nbsp;</p>
           </div>
           <div class="form-group row">
             <label for="medication" class="col-sm-3 col-form-label">Did you take your medication and/or supplements today, if any?</label>
@@ -176,12 +178,12 @@
           </div>
           <div class="row">
             <label>Journal entry</label><br />
-            <textarea id="entry"></textarea>
+            <textarea id="entry" placeholder="Daily Exercise, Meals, Vitals, etc."></textarea>
           </div>
 
           
           <div id="submitDiv" class="row">
-            <button type="button" id="submit">Submit</button>
+            <button type="button" id="submitcheck">Submit</button>
           </div>
   </form>
 </div>
@@ -190,5 +192,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="./assets/js/checkin.js"></script>
 
 </html>
