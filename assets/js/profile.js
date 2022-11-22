@@ -18,3 +18,13 @@ document.getElementById("profilesub").addEventListener("click", function(e) {
   
 });
 
+//Add nav bar controls
+document.getElementById("checkin").addEventListener("click", function(e) {
+    e.preventDefault();
+    window.location.href = "checkin.html";
+})
+document.getElementById("calendar").addEventListener("click", function(e) {
+    e.preventDefault();
+    window.location.href = "calendar.html";
+})
+

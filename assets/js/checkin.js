@@ -68,3 +68,4 @@ document.getElementById("submitcheck").addEventListener("click", function(e) {
     addData(data)
     window.location.href = "calendar.html";
 })
+
