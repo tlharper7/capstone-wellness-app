@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/style/checkin.css">
+  <title>Well Notes</title>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="homepage.html"><img src="./assets/images/IMG-1964.PNG" width="180" height="100"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" id= "profile" href="profile.html">Profile</a>
+        <a class="nav-item nav-link" id= "checkin" href="#">Check In</a>
+        <a class="nav-item nav-link" id= "calendar" href="calendar.html">Calendar</a>
+        <a class="nav-item nav-link" id= "charts" href="charts.html">Charts</a>
+        <a class="nav-item nav-link" href="faq.html">FAQ</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" id="mood">
+  <form>
+    <h1>Please Enter Today's Well Note</h1>
+    <div class="form-group row">
+      <label for="emotion" class="col-sm-2 col-form-label">How are you feeling today?</label>
+
+          <div class="item col-sm-2">
+            <label for="0">
+              <input
+                class="radio"
+                type="radio"
+                name="feedback"
+                id="excited"
+                value="excited"
+              />
+              <span>&#128512; Excited</span>
+            </label>
+          </div>
+
+          <div class="item col-sm-2">
+            <label for="1">
+              <input
+                class="radio"
+                type="radio"
+                name="feedback"
+                id="happy"
+                value="happy"
+              />
+              <span>&#128578; Happy</span>
+            </label>
+          </div>
+
+          <div class="item col-sm-2"></div>
+            <label for="2">
+              <input
+                class="radio"
+                type="radio"
+                name="feedback"
+                id="fine"
+                value="fine"
+              />
+              <span>&#128528; Fine</span>
+            </label>
+          </div>
+
+          <div class="item col-sm-2">
+            <label for="3">
+              <input
+                class="radio"
+                type="radio"
+                name="feedback"
+                id="sad"
+                value="sad"
+              />
+              <span>&#128542; Sad</span>
+            </label>
+          </div>
+
+          <div class="item col-sm-2">
+            <label for="4">
+              <input
+                class="radio"
+                type="radio"
+                name="feedback"
+                id="angry"
+                value="angry"
+              />
+              <span>&#128545; Angry</span>
+            </label>
+          </div>
+    </div>
+          <div class="form-group row" id="water">
+            <label for="water" class="col-sm-4 col-form-label">How much water did you drink today?</label>
+            <input class="col-sm-2"
+              type="number"
+              min="5"
+              max="100"
+              name="waterintake"
+              value=""
+              id="wAter"
+            /><p class="col-sm-4"> Ounces         
+      </p>
+            </div>
+          <div class="form-group row" id="meals">
+            <label for="meals" class="col-sm-4 col-form-label">Have you eaten the following meals?</label>
+            <input class="mealType" type="checkbox" name="breakFast" value="breakfast" id="breakFast" />
+            <p>&nbsp;&nbsp;Breakfast&nbsp;</p>
+            <input class="mealType" type="checkbox" name="lUnch" value="lunch" id="lUnch" />
+            <p>&nbsp;&nbsp;Lunch&nbsp;&nbsp;</p>
+            <input class="mealType" type="checkbox" name="dInner" value="dinner" id="dInner" />
+            <p>&nbsp;&nbsp;Dinner&nbsp;&nbsp;</p>
+            <input class="mealType" type="checkbox" name="sNacks" value="snacks" id="sNacks" />
+            <p>&nbsp;&nbsp;Snacks&nbsp;&nbsp;</p>
+            <input class="mealType" type="checkbox" name="fAsting" value="fasting" id="fAsting" />
+            <p>&nbsp;&nbsp;I'm Fasting&nbsp;&nbsp;</p>
+          </div>
+          <div class="form-group row" id="medication">
+            <label for="medication" class="col-sm-3 col-form-label">Did you take your medication and/or supplements today, if any?</label>
+      
+                <div class="item col-sm-3">
+                  <label for="5">
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="meds"
+                      id="yes"
+                      value="yes"
+                    />
+                    <span>Yes</span>
+                  </label>
+                </div>
+      
+                <div class="item col-sm-3">
+                  <label for="6">
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="meds"
+                      id="no"
+                      value="no"
+                    />
+                    <span>No</span>
+                  </label>
+                </div>
+      
+                <div class="item col-sm-3">
+                  <label for="7">
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="meds"
+                      id="na"
+                      value="na"
+                    />
+                    <span>N/A</span>
+                  </label>
+                </div>
+          </div>
+          <!-- <div class="form-group row" id="reminders">
+            <div class="col-sm-2">
+              <label>Would you like daily reminders?</label><br />
+              <input type="checkbox" name="reminders"  id="reminders" />
+            </div>
+          </div> -->
+          </break>
+          
+          <div class="form-group row" id="journal">
+            <label>Journal entry</label><br />
+            <textarea id="eNtry" placeholder="Daily Exercise, Meals, Vitals, etc."></textarea>
+          </div>
+
+          
+          <div id="submitDiv" class="row">
+            <button type="button" id="submitcheck">Submit</button>
+          </div>
+  </form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script type="module" src="./assets/js/checkin.js"></script>
+</body>
+
+
+
+</html>
