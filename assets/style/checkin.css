@@ -4,3 +4,8 @@ body {background-color: #e7fffb;}
     font-weight: bold;
     color:#10747d 
 }
+.button {
+    background-color: #10747d;
+    border-radius: 50px;
+    color:white  
+}

@@ -6,4 +6,6 @@ body {background-color: #e7fffb;}
 }
 .button {
     background-color: #10747d;
+    border-radius: 15px;
 }
+h1{text-align: center;}
