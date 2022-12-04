@@ -31,6 +31,18 @@ export function getEmailId(){
 }
 
 
+export async function addDemoData(data) {
+    try {
+        let _emailID = data.emailID;
+      
+
+        await (db.put('profiles', data, _emailID));
+
+    } catch (err) {
+        console.log(`${err.name}: ${err.message}`);
+    }
+}
+
 export async function addData(data) {
     try {
         let _emailID = data.emailID;

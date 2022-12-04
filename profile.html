@@ -16,7 +16,7 @@
 
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="index.html">WellNotes</a>
+    <a class="navbar-brand navstyle" href="index.html">WellNotes</a>
     <img src="./assets/images/IMG-1964.PNG" width="130" height="75"/>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -24,24 +24,26 @@
     </button>
     <div class="collapse navbar-collapse" id="navbar">
       <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link" id= "profile" href="#">Profile</a>
-        <a class="nav-item nav-link" id= "checkin" href="checkin.html">Check In</a>
-        <a class="nav-item nav-link" id= "calendar" href="calendar,html">Calendar</a>
-        <a class="nav-item nav-link" id= "charts" href="charts.html">Charts</a>
+        <a class="nav-item nav-link navstyle" id= "profile" href="#">Profile</a>
+        <a class="nav-item nav-link navstyle" id= "checkin" href="checkin.html">Check In</a>
+        <a class="nav-item nav-link navstyle" id= "calendar" href="calendar,html">Calendar</a>
+        <a class="nav-item nav-link navstyle" id= "charts" href="charts.html">Charts</a>
       </div>
     </div>
   </nav>
 
 <body>
+  <form>
   <div class="container">
     <h1>Profile Information</h1>
-  <form>
-    <div class="form-row">
-      <div class="form-group col-md-6">
+  
+    <div class="row">
+      <div class="col-4">
         <label for="inputFirstName">First Name</label>
       <input type="text" class="form-control" id="fName" placeholder="First Name" required>
       </div>
-      <div class="form-group col-md-6">
+      
+      <div class="col-4">
         <label for="inputLastName">Last Name</label>
         <input type="text" class="form-control" id="lName" placeholder="Last Name"> 
       </div>
@@ -56,10 +58,11 @@
       <!-- <input type='text' class="form-control" id='datepicker' style='width: 300px;' > <br> -->
       <input type='text' class="form-control" id= "bDate" data-provide="datepicker" style='width: 300px;' >
     </div>
-
-    <button type="submit" class="btn btn-primary" id="profilesub">Check-In!</button>
+    <button type="submit" class="btn btn-primary button" id="profilesub">Check-In!</button>
+  </div>
   </form>
-</div>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>

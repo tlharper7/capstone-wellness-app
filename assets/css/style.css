@@ -8484,3 +8484,10 @@ h1, h2, h3, h4, h5,
 
 .error-input {
   border-color: #cd4dcc; }
+
+  body {background-color: #e7fffb;}
+
+  .navstyle{
+      font-weight: bold;
+      color:#10747d 
+  }

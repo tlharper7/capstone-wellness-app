@@ -15,4 +15,10 @@ document.getElementById("checkin").addEventListener("click", function(e) {
 document.getElementById("calendar").addEventListener("click", function(e) {
     e.preventDefault();
     window.location.href = "calendar.html";
-})
+});
+
+Notification.requestPermission().then((result) => {
+    console.log(result);
+}
+
+)
