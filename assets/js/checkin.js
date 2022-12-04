@@ -39,14 +39,14 @@ document.getElementById("submitcheck").addEventListener("click", function(e) {
     console.log(medicationsvalue);
 
     //function for reminders
-    var followup = document.getElementById('reminders');
-    var reminds;
-    if (followup.checked) {
-        reminds = true;
-    }else{
-        reminds = false;
-        }
-    console.log(reminds);
+    // var followup = document.getElementById('reminders');
+    // var reminds;
+    // if (followup.checked) {
+    //     reminds = true;
+    // }else{
+    //     reminds = false;
+    //     }
+    // console.log(reminds);
     
     //log for journal entry
     var eNtry = document.getElementById("eNtry").value;
@@ -64,7 +64,7 @@ document.getElementById("submitcheck").addEventListener("click", function(e) {
 
   
    
-    var data = { "emailID": eAddy + "_checkin", "feedback": emotionsvalue, "waterintake": wAter, "mealdata": mealTotal.join(","), "meds": medicationsvalue, "reminders": reminds, "entry": eNtry, "checkinDate": dateDb };
+    var data = { "emailID": eAddy + "_checkin", "feedback": emotionsvalue, "waterintake": wAter, "mealdata": mealTotal.join(","), "meds": medicationsvalue, "entry": eNtry, "checkinDate": dateDb, "day": date, "month": month , "year": year};
     addData(data)
     window.location.href = "calendar.html";
 })

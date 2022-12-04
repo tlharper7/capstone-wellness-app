@@ -5,8 +5,7 @@ let currUser = localStorage.getItem('curremailid');
 let userCheckin = [];
 var checkIns = [];
 console.log(currUser);
-getData().then((response) => {
-    
+getData().then((response) => {   
 console.log(response);
 response.forEach(checkin => {
     if(checkin.emailID === currUser+"_checkin"){ 
@@ -16,7 +15,7 @@ response.forEach(checkin => {
 );
 console.log("from indexDB:",userCheckin);
 }).then(() => {
-    setUp();
+    setUp();  
 });
 
 
@@ -56,7 +55,7 @@ const months = [
     
      }
 
-       // Checks if a specific date has any events
+      
 
 
 // console.log(checkIns);

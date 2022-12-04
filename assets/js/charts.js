@@ -39,12 +39,12 @@ new Chart(document.getElementById("line-chart"), {
   new Chart(document.getElementById("bar-chart-horizontal"), {
     type: 'horizontalBar',
     data: {
-      labels: ["Breakfast", "Lunch", "Dinner", "Snacks",],
+      labels: ["Breakfast", "Lunch", "Dinner", "Snacks", "Fasting"],
       datasets: [
         {
           label: "Number of Meals Eaten (Days)",
           backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: [30,7,23,30]
+          data: [29,6,22,29,1]
         }
       ]
     },

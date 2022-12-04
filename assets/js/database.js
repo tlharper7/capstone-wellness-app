@@ -70,7 +70,10 @@ export async function getDataById(id) {
 }
 
 export async function getData() {
-    profileObj.plotProfile();
+    // profileObj.plotProfile();
+   let checkinData = await (db.getAll('profiles'));
+   console.log(checkinData);
+   return checkinData;
 }
 
 export async function deleteDataById(id) {
