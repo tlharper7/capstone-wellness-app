@@ -10,7 +10,10 @@ export default defineConfig({
             input: {
                 main: resolve(__dirname, 'index.html'),
             },
-
+           
+            input: {
+                main: resolve(__dirname, 'homepage.html'),
+            },
 
             input: {
                 main: resolve(__dirname, 'profile.html'),
@@ -26,6 +29,10 @@ export default defineConfig({
 
             input: {
                 main: resolve(__dirname, 'charts.html'),
+            },
+            
+            input: {
+                main: resolve(__dirname, 'faq.html'),
             },
         
             },

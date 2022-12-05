@@ -1,0 +1,21 @@
+body {background-color: #e7fffb;}
+
+.navstyle{
+    font-weight: bold;
+    font-size:x-large;
+    color:#10747d 
+}
+.list{
+    font-size: 45px;
+  }
+  .list-faq{
+    font-size: 25px;
+  }
+  #list{
+    font-size: 45px;
+  }
+  .todo-list {
+    font-size: 27px;
+    font-weight: 600;
+    color: red;
+  }

@@ -1,11 +1,18 @@
-body {background-color: #e7fffb;}
+body {
+    background-color: #e7fffb;
+    font-size: x-large;
+    font-weight: bold;
+}
 
 .navstyle{
     font-weight: bold;
+    font-size:x-large;
     color:#10747d 
 }
 .button {
     background-color: #10747d;
     border-radius: 50px;
-    color:white  
+    font-weight: bold;
+    color:white;
+      
 }
